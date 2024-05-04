@@ -1,1 +1,5 @@
-django/
+__pycache__/
+
+apps/
+conf/
+contrib/
