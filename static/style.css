@@ -2,7 +2,15 @@
     color: white !important; 
 }
 
-.caption-changes {
+.carousel-caption-changes {
     color: black;
-    margin-bottom: 90%;
+    margin-bottom: 36em;
+}
+
+.carousel-caption-changes h5 {
+    font-size: 4em;
+}
+
+.carousel-caption-changes p {
+    font-size: 2em;
 }

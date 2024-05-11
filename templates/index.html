@@ -1,35 +1,39 @@
 {% extends 'base.html' %}
 {% block content %}
 <header>
-    <nav class="navbar" style="background-color: #FF5F1F;">
-        <div class="container-fluid">
-          <a class="navbar-brand white-color" href="#" style="font-size: 1.7em">Engine</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link white-color" href="#">Link</a>
+  <nav class="navbar" style="background-color: #FF5F1F;">
+    <div class="container-fluid">
+      <a class="navbar-brand white-color" href="#" style="font-size: 1.7em">Engine</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link white-color" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle white-color" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle white-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            <form class="d-flex my-2" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <form class="d-flex my-2" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+      </div>
+    </div>
+  </nav>
 </header>
 
 <section>
@@ -37,11 +41,25 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         {% load static %}
-        <img src="{% static 'carouselImg.jpg' %}" class="d-block d-flex w-100" alt="...">
-        <div class="carousel-caption caption-changes">
-          <h1 style="font-size: 4em; font-weight: bolder;">Welcome to Engine!</h1>
-          <p style="font-size: 3em;">A place where all of your work is automated by AI.</p>
+        <img
+          src="https://api.unsplash.com/search/photos?query=minimal"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block carousel-caption-changes">
+          <span class="min-vh-100 justify-content align-items-center d-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </span>
         </div>
       </div>
+    </div>
+  </div>
 </section>
+
+<main>
+  <section>
+
+  </section>
+</main>
 {% endblock %}
+
+<!-- https://plus.unsplash.com/premium_photo-1681302427948-2fd0eca629b1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D -->
