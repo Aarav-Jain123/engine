@@ -1,16 +1,21 @@
 .white-color {
-    color: white !important; 
+    color: white; 
 }
 
 .carousel-caption-changes {
     color: black;
-    margin-bottom: 36em;
+    margin-bottom: 40em;
 }
 
-.carousel-caption-changes h5 {
+.carousel-caption-changes #intro-title {
     font-size: 4em;
 }
 
-.carousel-caption-changes p {
+.carousel-caption-changes #intro-para {
     font-size: 2em;
+}
+
+.card-changes {
+    width: 18rem;
+    margin: 1em;
 }
