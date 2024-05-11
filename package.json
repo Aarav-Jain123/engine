@@ -1,7 +1,6 @@
 {
   "dependencies": {
-    "unsplash-js": "^7.0.19",
-    "bootstrap": "^5.3.3"
+    "unsplash-js": "^7.0.19"
   },
   "type": "module"
 }
